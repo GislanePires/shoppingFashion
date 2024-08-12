@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
-import ButtomSignup from "../ButtomSignUp";
+// import ButtomSignup from "../ButtomSignUp";
+import ButtomNavigate from "../ButtomNavigate";
 import "./style.css";
 
 const Header = () => {
@@ -24,7 +25,7 @@ const Header = () => {
                         <NavLink to="/lifestyle" className={({ isActive }) => isActive ? "active" : ""}>LIFESTYLE</NavLink>
                     </li>
                     <li>
-                        <ButtomSignup to="/signup" />
+                        <ButtomNavigate route="signup" label="SIGN UP" />
                     </li>
                 </ul>
            </nav>

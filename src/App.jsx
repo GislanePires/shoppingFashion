@@ -6,6 +6,7 @@ import FashionPage from "./pages/FashionPage";
 import Favourite from "./pages/Favourite";
 import Lifestyle from "./pages/Lifestyle";
 import Signup from "./pages/Signup";
+import Shop from "./pages/Shop";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="favourite" element={<Favourite />} />
         <Route path="lifestyle" element={<Lifestyle />} />
         <Route path="signup" element={<Signup />} />
+        <Route path="shop" element={<Shop />} />
       </Routes>
     </Router>
   )

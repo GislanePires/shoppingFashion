@@ -1,0 +1,13 @@
+.footer-content {
+    background-color: var(--amarelo-destaque);
+    align-items: center;
+    width: 95.58%;
+    padding: 40px 20px 40px 40px;
+}
+.footer-images{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}

@@ -1,0 +1,17 @@
+button {
+    display:flex;
+    background-color: var(--preto-primario);
+    color: var(--branco-principal);
+    width: 100px;
+    height: 40px;
+    padding: 2px 10px 2px 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border:none;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: var(--amarelo-destaque);
+}

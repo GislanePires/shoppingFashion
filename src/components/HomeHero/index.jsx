@@ -1,6 +1,7 @@
 import React from "react";
 import home from "../../assets/images/home.png";
 import Header from "../Header";
+import ButtomNavigate from "../ButtomNavigate";
 import "./style.css";
 
 const HomeHero = () => {
@@ -16,7 +17,7 @@ const HomeHero = () => {
                         <h1>CLOTHES.</h1>
                         <p class="nota-hero">Live for Influential and Innovative fashion!</p>
                     </article>
-                    <button>SHOP NOW</button>
+                   <ButtomNavigate route="shop" label="SHOP NOW" />
                 </section>
                 <figure>
                     <img src={home} class="imagem-hero" alt="Dancing girl" />

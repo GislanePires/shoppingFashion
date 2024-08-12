@@ -1,15 +1,16 @@
 import React from "react";
-import hm from "../../assets/images/hm.png";
-import obey from "../../assets/images/obey.png";
-import shopify from "../../assets/images/shopify.png";
-import lacoste from "../../assets/images/lacoste.png";
-import levis from "../../assets/images/levis.png";
-import amazon from "../../assets/images/amazon.png";
+import hm from "../../assets/images/hm1.png";
+import obey from "../../assets/images/obey1.png";
+import shopify from "../../assets/images/shopify1.png";
+import lacoste from "../../assets/images/lacoste1.png";
+import levis from "../../assets/images/levis1.png";
+import amazon from "../../assets/images/amazon1.png";
+import "./style.css";
 
 const HomeFooter = () => {
     return(
-        <main>
-            <figure>
+        <main class="footer-content">
+            <figure class="footer-images">
                 <img src={hm} alt="HM" />
                 <img src={obey} alt="Obey" />
                 <img src={shopify} alt="Shopify" />

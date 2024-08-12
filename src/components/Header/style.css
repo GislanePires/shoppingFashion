@@ -6,6 +6,8 @@
 .container-header{
     display:flex;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
 }
 .imagem-logo{
     width:120px;
@@ -14,17 +16,15 @@
 li{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
     list-style: none;
-    /* background-color: var(--amarelo-destaque); */
 }
 
 .lista-home{
     display:flex;
     flex-direction: row;
-    width: 50rem;
-    justify-content: space-between;
-    /* gap:20px; */
+    width: 40rem;
+    justify-content: space-around;
+    align-items:center;
 
 }
 .nav-home a {
