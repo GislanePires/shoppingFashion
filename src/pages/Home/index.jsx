@@ -1,12 +1,14 @@
 import React from "react";
-import Header from "../../components/Header";
+// import Header from "../../components/Header";
 import HomeHero from "../../components/HomeHero";
-
+import HomeFooter from "../../components/HomeFooter";
+import "./style.css";
 const Home = () => {
     return(
-        <main>
-            <Header/>
+        <main class="pagina-home">
+            {/* <Header/> */}
             <HomeHero />
+            <HomeFooter />
         </main>
    
         
