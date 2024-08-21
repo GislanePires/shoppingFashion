@@ -1,0 +1,71 @@
+@import "./../../Global.scss";
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+.principal-fashion{
+    height: 600px;
+    
+    .container-fashion {
+        background-color: $amarelo-destaque;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height:100%;
+        
+        .image-fashion {
+        width: 50%;
+        height: 100%;
+     }
+        .text-fashion {
+            display: flex;
+            padding: 5rem;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: center;
+            width: 50%;
+
+            .emphasis-title-fashion {
+                position: relative;
+                margin: 0;
+                padding: 8px 8px 8px 0px;
+                z-index: 1;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 110%;
+                    height: 70%;
+                    background-color: $branco-fundo;
+                    z-index: -1;
+                    transform: translate(-50%, -50%) rotate(-2deg); // Rotação para criar o efeito torto
+                }
+            }
+            .title-fashion, .emphasis-title-fashion{
+                font-size: 4rem;
+                font-weight: 900;
+            }
+            .paragraph-fashion {
+                font-weight: 500;
+            }
+            .subtitle-fashion {
+                padding-top: 1.5rem;
+            }
+            .paragraph-terms {
+                padding-bottom: 1.5rem;
+                font-weight: 500;
+            }
+            .buttom-fashion {
+                width: 8rem;
+                padding: 1.2rem;
+                font-size: 1rem;
+                font-weight: 700;
+
+            }
+        }
+    }
+}

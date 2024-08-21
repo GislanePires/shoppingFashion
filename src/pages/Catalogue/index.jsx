@@ -3,27 +3,26 @@ import { GoArrowRight } from "react-icons/go";
 import catalogue1 from "../../assets/images/catalogue1.png";
 import catalogue2 from "../../assets/images/catalogue2.png";
 import catalogue3 from "../../assets/images/catalogue3.png";
+import "./style.scss";
 
 const Catalogue = () =>{
     return(
-        <main>
-            <section>
+        <main className="content-catalogue">
                 <h2>NEW ARRIVALS</h2>
+            <section className="container-images-catalogue">
                 <figure>
-                    <img src={catalogue1} />
-                    <figcaption>Hoodies & Sweetshirt</figcaption>
-                    <figcaption class="explore-link"><a href="#">Explore Now!<GoArrowRight /></a></figcaption>                </figure>
+                    <img src={catalogue1} className="catalogue-images" />
+                    <figcaption className="legend-image">Hoodies & Sweetshirt</figcaption>
+                    <figcaption><a href="#" className="explore-link" >Explore Now!<GoArrowRight /></a></figcaption>                </figure>
                 <figure>
-                    <img src={catalogue2} />
-                    <figcaption>Coats & Parkas</figcaption>
-                    <figcaption class="explore-link"><a href="#">Explore Now!<GoArrowRight /></a></figcaption>
+                    <img src={catalogue2} className="catalogue-images" />
+                    <figcaption className="legend-image">Coats & Parkas</figcaption>
+                    <figcaption><a href="#" className="explore-link" >Explore Now!<GoArrowRight /></a></figcaption>
                 </figure>
                 <figure>
-                    <img src={catalogue3} />
+                    <img src={catalogue3} className="catalogue-images" />
                     <figcaption>Tees & T-Shirt</figcaption>
-                    <figcaption class="explore-link"><a href="#">Explore Now!<GoArrowRight /></a></figcaption>
-                    
-
+                    <figcaption><a href="#" className="explore-link" >Explore Now!<GoArrowRight /></a></figcaption>
                 </figure>
             </section>
 

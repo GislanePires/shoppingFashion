@@ -1,0 +1,44 @@
+@import "./../../Global.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+
+    .imagem-logo {
+        width: 120px;
+        height: 34px;
+    }
+
+    .nav-home {
+        .lista-home {
+            display: flex;
+            flex-direction: row;
+            width: 40rem;
+            justify-content: space-around;
+            align-items: center;
+
+            li {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+
+                &.active {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import "./../../Global.scss";
+button {
+    display: flex;
+    background-color: $preto-primario;
+    color: $branco-principal;
+    width: 100px;
+    height: 40px;
+    padding: 2px 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $amarelo-destaque;
+    }
+}

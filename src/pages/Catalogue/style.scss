@@ -1,0 +1,47 @@
+@import "./../../Global.scss";
+
+.content-catalogue {
+    padding: 0 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    justify-content: space-around;
+
+    h2 {
+        position: relative;
+        font-size: 2rem;
+        font-weight: 900;
+        margin-left: 48px;
+    }
+
+    .container-images-catalogue {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        figure {
+            .catalogue-images {
+                width: 320px;
+                height: 410px;
+            }
+
+            .legend-image {
+                font-weight: 500;
+                font-size: 1.2rem;
+            }
+
+            .explore-link {
+                display: flex;
+                justify-content: space-between;
+                color: gray;
+                text-decoration: none;
+                font-size: 0.9rem;
+                font-weight: 400;
+
+                svg {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

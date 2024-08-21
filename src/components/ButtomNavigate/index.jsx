@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./style.css";
+import "./style.scss";
 
-const ButtomNavigate = ({route, label}) => {
+const ButtomNavigate = ({route, label, className, style}) => {
     const navigate = useNavigate();
 
     const handleNavigate = () => {
@@ -10,7 +10,10 @@ const ButtomNavigate = ({route, label}) => {
     };
 
     return (
-        <button onClick={handleNavigate}>
+        <button 
+        className={`buttom-navigate ${className}`}
+        style={style}
+        onClick={handleNavigate}>
             {label}
         </button>
     );

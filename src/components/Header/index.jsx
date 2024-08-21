@@ -1,17 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
-// import ButtomSignup from "../ButtomSignUp";
 import ButtomNavigate from "../ButtomNavigate";
-import "./style.css";
+import "./style.scss";
 
 const Header = () => {
     return(
         <>
         <header className="container-header">
-           <img src={logo} class="imagem-logo" alt="Logo" />
-           <nav class="nav-home">
-                <ul class="lista-home">
+            <NavLink to="/">
+                <img src={logo} className="imagem-logo" alt="Logo" />
+           </NavLink>
+           <nav className="nav-home">
+                <ul className="lista-home">
                 <li>
                         <NavLink to="/catalogue" className={({ isActive }) => isActive ? "active" : ""}>CATALOGUE</NavLink>
                     </li> 

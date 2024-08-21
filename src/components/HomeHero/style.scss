@@ -1,0 +1,83 @@
+@import "./../../Global.scss";
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+.hero-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .text-home-container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        background-color: $branco-fundo;
+        border-radius: 20px;
+
+        .texto-botao {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+
+            h1 {
+                font-size: 45.6px;
+                font-weight: 900;
+                line-height: 57px;
+            }
+
+            .nota-hero {
+                padding-top: 10px;
+                font-weight: 400;
+                font-size: 15.2px;
+            }
+        }
+
+        .imagem-hero {
+            width: 70%;
+            height: 70%;
+            padding: 20px 20px 0 20px;
+        }
+    }
+
+    // Placeholder com os estilos comuns
+    %titulo-destaque-base {
+        position: relative;
+        margin: 0;
+        padding: 8px 8px 8px 0px;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            width: 80%;
+            height: 80%;
+            z-index: -1;
+            transform: translate(-50%, -50%) rotate(-3deg); // Rotação para criar o efeito torto
+        }
+    }
+
+    .titulo-destaque1 {
+        @extend %titulo-destaque-base;
+
+        &::before {
+            background-color: $branco-principal;
+        }
+    }
+
+    .titulo-destaque2 {
+        @extend %titulo-destaque-base;
+
+        &::before {
+            background-color: $amarelo-destaque;
+        }
+    }
+}
