@@ -8,7 +8,7 @@ const Header = () => {
     return(
         <>
         <header className="container-header">
-            <NavLink to="/">
+            <NavLink to="/home">
                 <img src={logo} className="imagem-logo" alt="Logo" />
            </NavLink>
            <nav className="nav-home">
